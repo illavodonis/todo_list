@@ -1,0 +1,13 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+.app {
+  color: #282a2d;
+  height: 100vh;
+
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+  }
+}

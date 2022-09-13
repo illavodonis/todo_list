@@ -1,0 +1,32 @@
+.filter {
+    display: flex;
+    align-items: center;
+    min-width: fit-content;
+    width: 50%;
+    background-color:#fefefe;;
+    margin: 30px auto;
+    font-size: 1.5rem;
+
+    &__select {
+        padding: 16px;
+        text-align: center;
+        color: #eee;
+        font-weight: bold;
+        background-color: #77b255;
+        cursor: pointer;
+    }
+
+    &__input {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 16px 16px 8px;
+        width: 100%;
+    }
+}
+
+.input {
+    width: 100%;
+    &__btn {
+        cursor: pointer;
+    }
+}

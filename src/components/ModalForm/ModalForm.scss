@@ -1,0 +1,68 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(90, 90, 90, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 360px;
+    padding: 30px;
+    background-color: #eee;
+
+    @media (min-width: 720px) {
+        min-width: 500px;
+    }
+
+  } 
+
+  &__form-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    font-weight: bold;
+
+    &-close-btn{
+      cursor: pointer;
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__button {
+    width: 100%;
+    font-size: 2rem;
+    color: #eee;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #77b255;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 200ms;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}

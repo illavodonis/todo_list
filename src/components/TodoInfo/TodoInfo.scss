@@ -1,0 +1,88 @@
+@import 'https://cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css';
+
+.todo-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100%;
+
+    &__name{
+      font-weight: 500;
+    }
+
+    &__divider {
+      height: 1px;
+      background: #dcdcdc;
+    }
+
+    &__status {
+      cursor: pointer;
+    }
+  }
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 14px;
+
+
+  &__date {
+    margin-left: auto;
+  }
+}
+
+.functional-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+    
+  .mdi {
+    margin-right: 8px;
+  }
+}
+
+.btn-delete {
+  color: #808080;
+  
+  >.mdi-delete-empty {
+    display: none;
+  }
+  
+  &:hover {
+   
+    >.mdi-delete-empty {
+      display: block;
+    }
+    
+    >.mdi-delete {
+      display: none;
+    }
+  }
+  
+
+  
+  &:focus {
+    color: #000000;
+  }
+}
+
+.btn-edit {
+  color: #808080;
+  transition: all 200ms;
+
+  &:hover {
+    transform: rotate(-15deg);
+  }
+  &:focus {
+    color: #000000;
+  }
+}
