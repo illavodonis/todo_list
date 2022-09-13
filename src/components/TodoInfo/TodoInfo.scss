@@ -17,7 +17,12 @@
     }
 
     &__status {
+      display: flex;
       cursor: pointer;
+    }
+
+    &__description {
+      font-size: 24px;
     }
   }
 
@@ -26,8 +31,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-
-  font-size: 14px;
+  font-size: 24px;
 
 
   &__date {

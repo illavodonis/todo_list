@@ -32,12 +32,13 @@
         }
       }
     }
-    @media (min-width: 1600px) {
-      grid-template-columns: repeat(3, 500px);
-    }
-  }
 
-  .add-container {
+  @media (min-width: 1600px) {
+    grid-template-columns: repeat(3, 500px);
+  }
+}
+
+.add-container {
     display: flex;
     flex-direction: column;
     align-items: center;

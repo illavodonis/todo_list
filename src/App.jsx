@@ -66,12 +66,11 @@ const App = () => {
 
   const deleteTodo = (id) => {
     const updataTodos = todos.filter(todo => todo.id !== id);
-
     setTodos(updataTodos);
   }
 
   const addTodo = (todo) => {
-    setTodos([...todos, todo])
+    setTodos([...todos, todo]);
   }
 
   const updataTodos = (id, todoWithUpdata) => {
